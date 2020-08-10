@@ -1,0 +1,13 @@
+h1 {
+    border: 2px #eee solid;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
+form {
+    border: 2px #eee solid;
+    color: red;
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+}
