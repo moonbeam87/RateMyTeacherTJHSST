@@ -15,17 +15,14 @@
     <li>Arts and Music</li>
   </ul>
   <p>When submitting for a teacher, use only their last name. The system is case sensitive</p>
-  <h3>Submit your rating!</h3>
+  <h3>Query Ratings by Teacher!!!!</h3>
   <hr>
   <form action="" method="post" class="form" role="form">
     {{ form.csrf_token() }}
 
     <div class="row">
       <div class="form-group col-md-6">
-        {{ wtf.form_field(form.name_first, class='form-control', placeholder='Department') }}
-      </div>
-      <div class="form-group col-md-6">
-        {{ wtf.form_field(form.name_last, class='form-control', placeholder='Teacher Last name') }}
+        {{ wtf.form_field(form.name_last, class='form-control', placeholder='Last Name') }}
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>

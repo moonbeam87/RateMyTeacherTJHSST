@@ -17,6 +17,10 @@ def get_ratings(name):
     )
     items = response['Items']
     print(items)
+    i = get_average_rating(name)
+    s = str(items) + " AVERAGE RATING: " + str(i)
+    print(s)
+    return s
 
 def get_average_rating(name):
     # Get the service resource.
