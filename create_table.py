@@ -8,21 +8,21 @@ table = dynamodb.create_table(
     TableName='teachers',
     KeySchema=[
         {
-            'AttributeName': 'subject',
+            'AttributeName': 'last_name',
             'KeyType': 'HASH'
         },
         {
-            'AttributeName': 'last_name',
+            'AttributeName': 'rating',
             'KeyType': 'RANGE'
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'subject',
+            'AttributeName': 'last_name',
             'AttributeType': 'S'
         },
         {
-            'AttributeName': 'last_name',
+            'AttributeName': 'rating',
             'AttributeType': 'S'
         },
     ],

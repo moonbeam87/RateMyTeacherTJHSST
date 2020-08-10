@@ -10,6 +10,11 @@ app.config.from_mapping(
     SECRET_KEY=b'\xd6\x04\xbdj\xfe\xed$c\x1e@\xad\x0f\x13,@G')
 Bootstrap(app)
 
+@app.route('/read', methods=['GET'])
+def dropdown():
+    form1 = RegForm(request.form)
+    return render_template('test.html', form=form1)
+
 @app.route('/', methods=['GET', 'POST'])
 def registration():
     form = RegForm(request.form)
