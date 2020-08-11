@@ -15,7 +15,8 @@ nav = Nav()
 nav.register_element(
     "top",
     Navbar(
-        View("Submit Rating", "registration"), View("Query by Teacher", "test"),
+        View("Submit Rating", "registration"),
+        View("Query by Teacher", "dropdown"),
     ),
 )
 app = Flask(__name__)
