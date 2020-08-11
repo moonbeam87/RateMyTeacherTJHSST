@@ -18,6 +18,8 @@ def get_ratings(name):
     items = response['Items']
     print(items)
     i = get_average_rating(name)
+    if i ==0 :
+        return "NO RATINGS FOUND"
     s = str(items) + " AVERAGE RATING: " + str(i)
     print(s)
     return s
@@ -42,6 +44,8 @@ def get_average_rating(name):
         num = item['rating']
         num = int(num)
         nums.append(num)
+    if len(nums)==0:
+        return 0
     average = sum(nums)/len(nums)
     print(average)
     return average
